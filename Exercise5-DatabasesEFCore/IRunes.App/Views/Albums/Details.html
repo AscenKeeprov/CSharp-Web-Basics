@@ -1,0 +1,17 @@
+﻿<h1>Album&nbsp;Details</h1>
+<div>
+    @AlbumCoverArt
+</div>
+<h3>
+    Artist:&nbsp;@AlbumArtist<br />
+    Title:&nbsp;@AlbumTitle<br />
+    Genre:&nbsp;@AlbumGenre<br />
+    Price:&nbsp;@AlbumPrice<br />
+</h3>
+<h2>Tracks</h2>
+<hr />
+<a href="/Tracks/Create?albumId=@AlbumId">Create&nbsp;Track</a>
+<hr />
+@AlbumTracks
+<hr />
+<a href="/Albums/All">Back&nbsp;To&nbsp;All</a>

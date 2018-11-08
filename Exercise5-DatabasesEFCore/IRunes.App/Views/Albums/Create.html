@@ -1,0 +1,28 @@
+﻿<h1>Create&nbsp;Album</h1>
+<hr />
+<form action="/Albums/Create" method="post" accept-charset="utf-8" id="formAlCreate" name="formAlbumCreate">
+    <fieldset>
+        <p>
+            <label for="artist">Artist:</label>
+            <input type="text" id="artist" name="artist" required />
+        </p>
+        <p>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required />
+        </p>
+	<p>
+	    <label for="genre">Genre:</label>
+	    <select id="genre" name="genre">@MusicGenres</select>
+	</p>
+        <p>
+	    <label for="coverArt">Cover&nbsp;Art&nbsp;(URL):</label>
+            <input type="text" id="coverArt" name="coverArt" />
+        </p>
+        <br />
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+</form>
+<hr />
+<a href="/Albums/All">Back&nbsp;To&nbsp;All</a>

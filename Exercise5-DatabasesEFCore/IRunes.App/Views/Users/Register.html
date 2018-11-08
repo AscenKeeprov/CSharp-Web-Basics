@@ -1,0 +1,59 @@
+﻿<h1>Register</h1>
+<form action="/Users/Register" method="post" accept-charset="utf-8" id="formReg" name="formRegister">
+    <fieldset>
+        <legend>User Information</legend>
+        <p>
+            <strong>Fields marked by <strong><abbr title="Required">*</abbr></strong> are required!</strong>
+        </p>
+        <br />
+        <p>
+            <label for="username">
+                <span>Username<strong><abbr title="Required">*</abbr></strong>:</span>
+            </label>
+            <input type="text" id="username" name="username" placeholder="Username" required />
+        </p>
+        <p>
+            <label for="firstName">First&nbsp;Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name (Optional)" />
+        </p>
+        <p>
+            <label for="lastName">Last&nbsp;Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name (Optional)" />
+        </p>
+        <p>
+            <label for="password">
+                <span>Password<strong><abbr title="Required">*</abbr></strong>:</span>
+            </label>
+            <input type="password" id="password" name="password" placeholder="Password" onchange="passwordValidate()" required />
+        </p>
+        <p>
+            <label for="rePassword">
+                <span>Confirm&nbsp;Password<strong><abbr title="Required">*</abbr></strong>:</span>
+            </label>
+            <input type="password" id="rePassword" name="rePassword" placeholder="Confirm Password" onchange="passwordValidate()" required />
+        </p>
+        <p>
+            <label for="email">
+                <span>E-Mail&nbsp;Address<strong><abbr title="Required">*</abbr></strong>:</span>
+            </label>
+            <input type="email" id="email" name="email" placeholder="E-Mail" required />
+        </p>
+        <br />
+        <p>
+            <input type="submit" value="Register" />
+        </p>
+    </fieldset>
+</form>
+<script async>
+    function passwordValidate() {
+	var password = document.getElementById("password");
+	var rePassword = document.getElementById("rePassword");
+	if (password.value != rePassword.value) {
+	    password.setCustomValidity("Passwords do not match!");
+	    rePassword.setCustomValidity("Passwords do not match!");
+	} else {
+	    password.setCustomValidity('');
+	    rePassword.setCustomValidity('');
+	}
+    }
+</script>

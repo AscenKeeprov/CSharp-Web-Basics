@@ -1,0 +1,32 @@
+﻿<h1>Create&nbsp;Track</h1>
+<hr />
+<form action="/Tracks/Create?albumId=@AlbumId" method="post" accept-charset="utf-8" id="formTrCreate" name="formTrackCreate">
+    <fieldset>
+        <p>
+            <label for="artist">Artist:</label>
+            <input type="text" id="artist" name="artist" value="@AlbumArtist" readonly />
+        </p>
+        <p>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required />
+        </p>
+        <p>
+            <label for="genre">Genre:</label>
+            <select id="genre" name="genre">@MusicGenres</select>
+        </p>
+        <p>
+	    <label for="link">Link&nbsp;(URL):</label>
+            <input type="text" id="link" name="link" required />
+        </p>
+        <p>
+            <label for="price">Price:</label>
+	    <input type="number" id="price" name="price" min="0.01" step="0.01" required />
+        </p>
+        <br />
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+</form>
+<hr />
+<a href="/Albums/Details?albumId=@AlbumId">Back&nbsp;To&nbsp;Album</a>

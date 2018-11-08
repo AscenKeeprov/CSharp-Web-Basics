@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS.HTTP", "SIS.HTTP\SIS.HTTP.csproj", "{74FFF910-37BB-4754-A82A-17BF3C6858AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS.WebServer", "SIS.WebServer\SIS.WebServer.csproj", "{AC07B1C6-4C7B-476C-8785-AFB0AC374979}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IRunes.App", "IRunes.App\IRunes.App.csproj", "{5D984372-5249-478A-BB20-BF7967F7861E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74FFF910-37BB-4754-A82A-17BF3C6858AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FFF910-37BB-4754-A82A-17BF3C6858AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FFF910-37BB-4754-A82A-17BF3C6858AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FFF910-37BB-4754-A82A-17BF3C6858AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC07B1C6-4C7B-476C-8785-AFB0AC374979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC07B1C6-4C7B-476C-8785-AFB0AC374979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC07B1C6-4C7B-476C-8785-AFB0AC374979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC07B1C6-4C7B-476C-8785-AFB0AC374979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D984372-5249-478A-BB20-BF7967F7861E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D984372-5249-478A-BB20-BF7967F7861E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D984372-5249-478A-BB20-BF7967F7861E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D984372-5249-478A-BB20-BF7967F7861E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {714725D5-227D-4346-AA77-F0EE8305D7FB}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>iRunes @Title</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+</head>
+<body onload="navbarPopulate(@IsAuthenticated)">
+    <h1>iRunes</h1>
+    <nav>
+        <ul>
+            <li><a href="/Home/Index">Home</a></li>
+            <li id="anchorAlbums"><a href="/Albums/All">Albums</a></li>
+            <li id="anchorLogin"><a href="/Users/Login">Login</a></li>
+            <li id="anchorLogout"><a href="/Users/Logout">Logout</a></li>
+            <li id="anchorRegister"><a href="/Users/Register">Register</a></li>
+        </ul>
+    </nav>
+    <hr />
+    @Body
+    <hr />
+    <footer>
+        <b>CopyRight &copy; SoftUni. All rights reserved.</b>
+    </footer>
+    <script async>
+	function navbarPopulate() {
+	    if (arguments[0] == true || arguments[0] == 1) {
+		document.getElementById("anchorLogin").style.display = 'none';
+		document.getElementById("anchorRegister").style.display = 'none';
+	    } else {
+		document.getElementById("anchorAlbums").style.display = 'none';
+		document.getElementById("anchorLogout").style.display = 'none';
+	    }
+	}
+    </script>
+</body>
+</html>
