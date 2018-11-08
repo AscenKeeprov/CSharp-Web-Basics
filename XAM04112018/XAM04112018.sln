@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS.HTTP", "SIS.HTTP\SIS.HTTP.csproj", "{C1B4300D-919C-4860-9330-F785BD912AA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS.WebServer", "SIS.WebServer\SIS.WebServer.csproj", "{66531C75-4167-4A2B-B2E0-A66F0A229460}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SIS.Framework", "SIS.Framework\SIS.Framework.csproj", "{0B42E4EC-4DEC-40B3-999C-4B5891BE06E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panda.Models", "Panda.Models\Panda.Models.csproj", "{1644BD39-9366-4B0C-962E-32D9689125E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panda.Data", "Panda.Data\Panda.Data.csproj", "{6305C10E-899B-42AD-AE7B-B2F13D766527}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panda.Services", "Panda.Services\Panda.Services.csproj", "{3D1E73CC-241E-4500-99D6-6E310961BDC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panda.App", "Panda.App\Panda.App.csproj", "{6637F68B-3885-4948-9DD1-F03726B7145E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1B4300D-919C-4860-9330-F785BD912AA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1B4300D-919C-4860-9330-F785BD912AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1B4300D-919C-4860-9330-F785BD912AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1B4300D-919C-4860-9330-F785BD912AA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66531C75-4167-4A2B-B2E0-A66F0A229460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66531C75-4167-4A2B-B2E0-A66F0A229460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66531C75-4167-4A2B-B2E0-A66F0A229460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66531C75-4167-4A2B-B2E0-A66F0A229460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B42E4EC-4DEC-40B3-999C-4B5891BE06E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B42E4EC-4DEC-40B3-999C-4B5891BE06E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B42E4EC-4DEC-40B3-999C-4B5891BE06E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B42E4EC-4DEC-40B3-999C-4B5891BE06E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1644BD39-9366-4B0C-962E-32D9689125E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1644BD39-9366-4B0C-962E-32D9689125E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1644BD39-9366-4B0C-962E-32D9689125E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1644BD39-9366-4B0C-962E-32D9689125E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6305C10E-899B-42AD-AE7B-B2F13D766527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6305C10E-899B-42AD-AE7B-B2F13D766527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6305C10E-899B-42AD-AE7B-B2F13D766527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6305C10E-899B-42AD-AE7B-B2F13D766527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D1E73CC-241E-4500-99D6-6E310961BDC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D1E73CC-241E-4500-99D6-6E310961BDC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D1E73CC-241E-4500-99D6-6E310961BDC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D1E73CC-241E-4500-99D6-6E310961BDC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6637F68B-3885-4948-9DD1-F03726B7145E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6637F68B-3885-4948-9DD1-F03726B7145E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6637F68B-3885-4948-9DD1-F03726B7145E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6637F68B-3885-4948-9DD1-F03726B7145E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF590553-6892-4B44-A39B-88F560F6697B}
+	EndGlobalSection
+EndGlobal

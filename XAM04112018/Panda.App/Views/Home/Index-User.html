@@ -1,0 +1,38 @@
+﻿<div class="container-fluid text-center">
+    <h2>Hello, @Model.Username!</h2>
+</div>
+<hr class="hr-2 bg-dark" />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col col-3 ml-1 mr-auto p-0">
+            <div class="text-center">
+                <h5>Pending</h5>
+            </div>
+            <div class="rounded p-2 border-1 border-panda">
+                <div class="d-flex flex-column justify-content-between">
+                    @Model.Collection.PendingPackages(@Item)
+                </div>
+            </div>
+        </div>
+        <div class="col col-3 mx-auto p-0">
+            <div class="text-center">
+                <h5>Shipped</h5>
+            </div>
+            <div class="rounded p-2 border-1 border-panda">
+                <div class="d-flex flex-column justify-content-between">
+                    @Model.Collection.ShippedPackages(@Item)
+                </div>
+            </div>
+        </div>
+        <div class="col col-3 ml-auto mr-1 p-0">
+            <div class="text-center">
+                <h5>Delivered</h5>
+            </div>
+            <div class="rounded p-2 border-1 border-panda">
+                <div class="d-flex flex-column justify-content-between">
+                    @Model.Collection.DeliveredPackages(@Item)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

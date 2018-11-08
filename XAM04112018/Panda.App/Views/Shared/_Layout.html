@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>PANDA</title>
+    <link rel="stylesheet" type="text/css" href="css/reset-css.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark p-1 bg-panda">
+            <a class="navbar-brand nav-link-white my-1 mr-auto ml-2 p-0" href="/">PANDA</a>
+            <button class="navbar-toggler my-1 mr-1 ml-auto border-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end ml-3" id="navbarNav">
+                <div style="display: @Model.AdminOptionDisplay">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white text-white" href="/packages/pending">Pending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white text-white" href="/packages/shipped">Shipped</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white text-white" href="/packages/delivered">Delivered</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white text-white" href="/packages/create">Package</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-white text-white" href="/">Home</a>
+                    </li>
+                    <li class="nav-item" style="display: @Model.GuestOptionDisplay">
+                        <a class="nav-link nav-link-white text-white" href="/users/login">Login</a>
+                    </li>
+                    <li class="nav-item" style="display: @Model.GuestOptionDisplay">
+                        <a class="nav-link nav-link-white text-white" href="/users/register">Register</a>
+                    </li>
+                    <li class="nav-item" style="display: @Model.AdminOptionDisplay">
+                        <a class="nav-link nav-link-white text-white" href="/receipts/index">Receipts</a>
+                    </li>
+                    <li class="nav-item" style="display: @Model.UserOptionDisplay">
+                        <a class="nav-link nav-link-white text-white" href="/receipts?userId=@Model.UserId">Receipts</a>
+                    </li>
+                    <li class="nav-item" style="display: @Model.LoggedInOptionDisplay">
+                        <a class="nav-link nav-link-white text-white" href="/users/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="mt-3 mb-5">
+        @RenderError()
+        @RenderBody()
+    </main>
+    <footer class="footer w-100">
+        <div class="container-fluid bg-panda">
+            <div class="text-white p-2 text-center">
+                &copy; CopyRight Sanity Web Design Studios 2018. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>
