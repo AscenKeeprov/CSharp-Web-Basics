@@ -1,0 +1,20 @@
+﻿<h1 class="text-center">@Model.Name</h1>
+<hr class="hr-2 bg-dark" />
+<div class="product-type-holder w-50 mx-auto d-flex justify-content-between">
+    <h3 class="text-center">Type: @Model.Type</h3>
+    <h3 class="text-center">Price: @Model.Price</h3>
+</div>
+<hr class="hr-2 bg-dark" />
+<h3 class="text-center">Description</h3>
+<div class="product-description-holder">
+    <p class="text-center mt-4">
+        @Model.Description
+    </p>
+</div>
+<hr class="hr-2 bg-dark" />
+<h3 class="text-center">Actions</h3>
+<div class="product-action-holder d-flex justify-content-center mt-4">
+    <a class="btn chushka-bg-color mx-5 text-white" href="/orders/create?productId=@Model.Id">Order</a>
+    <a class="btn chushka-bg-color mx-5 text-white" href="/products/edit?id=@Model.Id" style="display: @Model.AdminOptionDisplay">Edit</a>
+    <a class="btn chushka-bg-color mx-5 text-white" href="/products/delete?id=@Model.Id" style="display: @Model.AdminOptionDisplay">Delete</a>
+</div>
