@@ -1,0 +1,35 @@
+﻿<div class="container col-sm-12">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h1 class="text-success m-0">Album&nbsp;Details</h1>
+        </div>
+    </div>
+    <hr class="hr-success bg-success" />
+    <div class="row">
+        <div class="col-sm-5 mt-2 mb-3">
+            <div class="text-center">
+                <img src="@AlbumCoverArt" alt="@AlbumCoverArtTooltip" height="256" width="256" />
+            </div>
+            <div class="text-center">
+                <h6><b>Artist:&nbsp;@AlbumArtist</b></h6>
+                <h6><b>Title:&nbsp;@AlbumTitle</b></h6>
+                <h6><b>Genre:&nbsp;@AlbumGenre</b></h6>
+                <h6><b>Price:&nbsp;@AlbumPrice</b></h6>
+            </div>
+            <div class="d-flex justify-content-around">
+                <div class="mr-auto">
+                    <a class="btn btn-sm btn-success" href="/Tracks/Create?albumId=@AlbumId">Create&nbsp;Track</a>
+                </div>
+                <div class="ml-auto">
+                    <a class="btn btn-sm btn-success" href="/Albums/All">Back&nbsp;To&nbsp;All</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-7 mt-2 mb-3">
+            <h4><b>Tracks</b></h4>
+            <div class="col-sm-12">
+                <ul class="list">@AlbumTracks</ul>
+            </div>
+        </div>
+    </div>
+</div>
